@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        overflow-x: hidden; 
+        /* remove the horizontal scrool */
+        background: brown;
+    }
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .header{
+        position: sticky;
+        top: 0%;
+        z-index: 1000;
+        background-color: rgb(9, 2, 30);
+    }
+    ul{
+        display:flex;
+        list-style-type: none;   
+        
+    }
+    ul li{
+        padding: 23px;
+        
+    }
+    ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    a::selection{
+        color: aqua;
+    }
+    a:hover{
+        color:blue
+    }
+    .main{
+        display: flex;
+        flex-wrap: wrap; /* Allows boxes to wrap on smaller screens */
+        justify-content: center;
+    }
+    .box1,.box2{
+        width: 300px;
+        height: 300px;
+        border: 2px solid black;
+        margin: 30px;   
+        background-color: grey;
+    }
+
+
+    .rectangle{
+        border: 2px solid black;
+        width: 800px;
+        height: 100px;
+        border-radius: 50px;
+        display: flex;
+  justify-content: center;
+  align-items: center;
+        margin: 20px auto;
+        background-color: black;
+    }
+    .rectangle p{
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+    }
+.logo{
+    position: fixed;
+ right: 0;
+ bottom: 0;
+ margin: 10px;
+}
+   .logo img{
+    width: 50px;
+    height: 50px;
+   }
+   .footer{
+    width: 100vw;
+    height: 10vh;
+    border: 2px solid black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+   }
+</style>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Products</a></li>
+            </ul>
+    </nav>
+</header>
+<main class="main">
+        <div class="box1"></div>
+        <div class="box2"></div>
+</main>
+<div class="rectangle">
+    <p>Welcome to my website</p>
+</div>
+<div class="logo">
+    <img src="27183.jpg" alt="">
+</div>
+
+<footer class="footer">
+ <p>&copy;All right reserved</p>
+</footer>
+</body>
+</html>
